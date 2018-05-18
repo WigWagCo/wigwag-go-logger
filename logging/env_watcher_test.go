@@ -3,16 +3,24 @@ package logging_test
 import (
 	"fmt"
 
-	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/ginkgo"	
+	. "github.com/onsi/gomega"
 
 	. "github.com/WigWagCo/wigwag-go-logger/logging"
 
+	"io/ioutil"
 	"os"
 	"time"
 )
 
+func setLogLevel(ll string) {
+	Expect(ioutil.WriteFile("/tmp/log_level", []byte(ll), os.ModePerm)).Should(Succeed())
+}
+
 var _ = Describe("EnvWatcher", func() {
 	BeforeEach(func() {
+		os.Setenv(LogLevelEnvironmentVariable, "/tmp/log_level")
+		
 		go func() {
 			for {
 				<-time.After(time.Second)
@@ -34,11 +42,11 @@ var _ = Describe("EnvWatcher", func() {
 
 		<-time.After(time.Second * time.Duration(LogLevelSyncPeriodSeconds + 1))
 
-		os.Setenv(LogLevelEnvironmentVariable, "asadf")
+		setLogLevel("asadf")
 
 		<-time.After(time.Second * time.Duration(LogLevelSyncPeriodSeconds + 1))		
 
-		os.Setenv(LogLevelEnvironmentVariable, "info")
+		setLogLevel("info")
 		
 		<-time.After(time.Second * time.Duration(LogLevelSyncPeriodSeconds + 1))
 
@@ -46,7 +54,7 @@ var _ = Describe("EnvWatcher", func() {
 
 		<-time.After(time.Second * time.Duration(LogLevelSyncPeriodSeconds + 1))
 		
-		os.Setenv(LogLevelEnvironmentVariable, "asfd")
+		setLogLevel("asfd")
 
 		<-time.After(time.Second * time.Duration(LogLevelSyncPeriodSeconds + 1))
 
@@ -54,7 +62,7 @@ var _ = Describe("EnvWatcher", func() {
 		
 		<-time.After(time.Second * time.Duration(LogLevelSyncPeriodSeconds + 1))
 
-		os.Setenv(LogLevelEnvironmentVariable, "warning")
+		setLogLevel("warning")
 
 		<-time.After(time.Second * time.Duration(LogLevelSyncPeriodSeconds + 1))		
 		
