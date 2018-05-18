@@ -5,7 +5,7 @@ import (
 
 	. "github.com/onsi/ginkgo"
 
-	. "devicedb/logging"
+	. "github.com/WigWagCo/wigwag-go-logger/logging"
 
 	"os"
 	"time"
