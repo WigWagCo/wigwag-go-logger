@@ -27,10 +27,10 @@ func (slb *splitLogBackend) Log(level logging.Level, calldepth int, rec *logging
     defer slb.rwMu.RUnlock()
 
     if level <= logging.WARNING {
-        return slb.errLogBackend.Log(level, calldepth + 2, rec)
+        return slb.errLogBackend.Log(level, calldepth + 1, rec)
     }
     
-    return slb.outLogBackend.Log(level, calldepth + 2, rec)
+    return slb.outLogBackend.Log(level, calldepth + 1, rec)
 }
 
 func (slb *splitLogBackend) SetLevel(level logging.Level, module string) {
