@@ -69,7 +69,8 @@ func init() {
 
 	logging.SetBackend(loggingBackend)
 
-	go watchLoggingConfig()
+	go watchLoggingLevelConfig()
+	go watchLoggingComponentConfig()
 }
 
 func LogLevelIsValid(ll string) bool {
