@@ -1,6 +1,6 @@
 {
-	"ImportPath": "github.com/WigWagCo/wigwag-go-logger",
-	"GoVersion": "go1.9",
+	"ImportPath": "github.com/armPelionEdge/wigwag-go-logger",
+	"GoVersion": "go1.12",
 	"GodepVersion": "v80",
 	"Packages": [
 		"./..."
@@ -179,62 +179,77 @@
 		},
 		{
 			"ImportPath": "golang.org/x/text/encoding",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/encoding/charmap",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/encoding/htmlindex",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/encoding/internal",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/encoding/internal/identifier",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/encoding/japanese",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/encoding/korean",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/encoding/simplifiedchinese",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/encoding/traditionalchinese",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/encoding/unicode",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/internal/tag",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/internal/utf8internal",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/language",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/runes",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{
 			"ImportPath": "golang.org/x/text/transform",
+			"Comment": "v0.3.0",
 			"Rev": "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 		},
 		{

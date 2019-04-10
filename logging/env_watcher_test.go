@@ -3,7 +3,7 @@ package logging_test
 import (
 	"fmt"
 
-	. "wigwag-go-logger/logging"
+	. "github.com/armPelionEdge/wigwag-go-logger/logging"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
